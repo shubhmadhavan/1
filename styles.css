@@ -115,7 +115,7 @@
 
     .folder-label {
       color: rgba(208, 208, 208);
-      margin-top:8px;
+      margin-top:3px;
 margin-left: 4px;
       font-size: 12px;
       text-align: left !important;
@@ -138,12 +138,13 @@ position: relative;
 }
 
 
-@media (max-width: 768px) {
-  .folder-icon {
-    position: relative !important;
-    
-    margin-left: -32px;
-    zoom: 1.5;
-  }
+.folder {
+
+  transition: transform 0.3s ease;
 }
 
+@media (max-width: 968px) {
+  .folder {
+    transform: scale(1.4);
+  }
+}
