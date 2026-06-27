@@ -2,10 +2,22 @@
     body {
       margin: 0;
       height: 100vh;
-      background: linear-gradient(135deg, #1e1e2f, #2c2c54);
-      font-family: sans-serif;
+    background: linear-gradient(135deg, #040404, #081735, #1f4e8c);
+background: linear-gradient(135deg, #040404, #3d2b00, #5d4802);
+font-family: sans-serif;
       overflow: hidden;
     }
+
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: url("img/0.png") repeat;
+    opacity: 0.10; /* Adjust as needed */
+    pointer-events: none;
+    z-index: -1;
+
+}
 
     .folder {
       position: absolute;
@@ -145,6 +157,6 @@ position: relative;
 
 @media (max-width: 968px) {
   .folder {
-    transform: scale(1.4);
+    transform: scale(0.8);
   }
 }
